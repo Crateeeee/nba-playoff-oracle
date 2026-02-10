@@ -3,38 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NBA Playoff Oracle | Powered by Azure ML</title>
+    <title>NBA Playoff Oracle | AI-Powered Predictions</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="nba-header">
+    <!-- Header Section -->
+    <header class="site-header">
         <div class="container">
-            <h1>🏀 NBA PLAYOFF ORACLE</h1>
-            <p class="subtitle">AI-Powered Postseason Predictions</p>
+            <div class="logo">
+                <h1>🏀 NBA Playoff Oracle</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#predictions">Predictions</a></li>
+                    <li><a href="#model-info">Model Info</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <main class="container">
-        <section class="model-info">
-            <h2>Model Performance</h2>
-            <div id="model-stats"></div>
-        </section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">AI-Powered NBA Playoff Predictions</h1>
+            <p class="hero-subtitle">Machine learning meets basketball analytics</p>
+        </div>
+    </section>
 
-        <section class="predictions">
-            <h2>Eastern Conference</h2>
-            <div id="eastern-conference" class="team-grid"></div>
+    <!-- Model Info Section -->
+    <section class="model-section">
+        <div class="container">
+            <div id="model-info">
+                <!-- Model info will be loaded here by JavaScript -->
+                <div class="loading">Loading model information...</div>
+            </div>
+        </div>
+    </section>
 
-            <h2>Western Conference</h2>
-            <div id="western-conference" class="team-grid"></div>
-        </section>
-    </main>
+    <!-- Predictions Section -->
+    <section class="predictions-section" id="predictions">
+        <div class="container">
+            <h2 class="section-title">2025-26 Playoff Predictions</h2>
+            <div id="predictions-container">
+                <!-- Team predictions will be loaded here by JavaScript -->
+                <div class="loading">Loading predictions...</div>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>Powered by Azure Machine Learning | Data updated: <span id="last-updated"></span></p>
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2>About the Oracle</h2>
+            <p>This AI-powered playoff predictor uses Azure Machine Learning's AutoML to analyze historical NBA data and forecast which teams are most likely to make the postseason. The model considers factors like defensive rating, offensive efficiency, three-point shooting percentage, and win-loss records to generate probability scores for each team.</p>
+            <p class="tech-stack">
+                <strong>Tech Stack:</strong> Azure ML Studio • Azure Blob Storage • GitHub Actions • JavaScript
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 NBA Playoff Oracle | Powered by Azure Machine Learning</p>
+            <p class="disclaimer">Predictions are for educational purposes only</p>
+        </div>
     </footer>
 
+    <!-- Load JavaScript -->
     <script src="script.js"></script>
-
-    
 </body>
 </html>
