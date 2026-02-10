@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-02-10T20:15:00Z",
+  "model_info": {
+    "algorithm": "VotingEnsemble",
+    "accuracy": 0.0,
+    "primary_metric": "AUC_weighted"
+  },
+  "predictions": [
+    {
+      "team": "Boston Celtics",
+      "conference": "Eastern",
+      "playoff_probability": 0.95,
+      "projected_wins": 58,
+      "key_factors": ["Defensive Rating", "Win %"]
+    },
+    {
+      "team": "Denver Nuggets",
+      "conference": "Western",
+      "playoff_probability": 0.92,
+      "projected_wins": 56,
+      "key_factors": ["Offensive Rating", "3PT %"]
+    },
+    {
+      "team": "Los Angeles Lakers",
+      "conference": "Western",
+      "playoff_probability": 0.78,
+      "projected_wins": 48,
+      "key_factors": ["Win %", "Point Differential"]
+    }
+  ]
+}

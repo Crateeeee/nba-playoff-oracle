@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Playoff Oracle | Powered by Azure ML</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="nba-header">
+        <div class="container">
+            <h1>🏀 NBA PLAYOFF ORACLE</h1>
+            <p class="subtitle">AI-Powered Postseason Predictions</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="model-info">
+            <h2>Model Performance</h2>
+            <div id="model-stats"></div>
+        </section>
+
+        <section class="predictions">
+            <h2>Eastern Conference</h2>
+            <div id="eastern-conference" class="team-grid"></div>
+
+            <h2>Western Conference</h2>
+            <div id="western-conference" class="team-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Powered by Azure Machine Learning | Data updated: <span id="last-updated"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
