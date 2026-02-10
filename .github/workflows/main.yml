@@ -19,4 +19,5 @@ jobs:
               --account-name ${{ secrets.nbaoracledata }} \
               --account-key ${{ secrets.AZURE_STORAGE_KEY }} \
               --destination '$web' \
-              --source .
+              --source . \
+              --overwrite
